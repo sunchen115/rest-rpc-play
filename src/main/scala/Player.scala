@@ -5,5 +5,7 @@ class Player(name: String, age: Int) {
   def getFullInfo: String ={
     return name
   }
-
+  def getHelloMessage: String ={
+    return MyCore.getCoreMessage
+  }
 }

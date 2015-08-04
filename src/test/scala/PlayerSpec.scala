@@ -8,4 +8,12 @@ class PlayerSpec extends Specification {
     }
 
   }
+
+  "getHelloMessage" should {
+      "return message in Hello" in {
+        val player = new Player("sc",2)
+        player.getHelloMessage must beEqualTo("This is core")
+      }
+
+    }
 }
