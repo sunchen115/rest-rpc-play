@@ -16,4 +16,11 @@ class PlayerSpec extends Specification {
       }
 
     }
+
+  "getHelloPlugin" should {
+      "return message in plugin" in {
+        val player = new Player("sc",2)
+        player.getHelloHaxeMessage must beEqualTo("Hello")
+      }
+  }
 }
